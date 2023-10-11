@@ -1,0 +1,106 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 62.5%;
+
+}
+
+:root {
+
+    --text-color: #00262c;
+    --button-color: #fa7422;
+
+}
+
+.header {
+
+    margin: 0 auto;
+    max-width: 1200px;
+
+}
+
+.header__grid {
+
+    height: 400px;
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.header__information {
+
+    align-self: center;
+    padding: 50px;
+    color: var(--text-color);
+
+}
+
+.information__title {
+
+    width: 180px;
+    font-size: 3.4rem;
+    margin-bottom: 20px;
+
+}
+
+.information__text {
+
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 25px;
+
+}
+
+.button {
+
+    width: 150px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    font-size: 1.6rem;
+    background-color: var(--button-color);
+    color: white;
+    box-shadow: 0px 0px 10px gray;
+
+}
+
+.button:hover {
+
+    background-color: #f39a62;
+
+}
+
+.header__hero {
+
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/hero.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+@media (max-width: 900px) {
+    
+    .header__information {
+
+        grid-area: 1 / 3;
+
+    }
+
+    .header__hero {
+
+        display: none;
+
+    }
+
+}
