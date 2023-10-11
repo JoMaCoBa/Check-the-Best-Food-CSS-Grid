@@ -13,6 +13,7 @@
 :root {
 
     --text-color: #00262c;
+    --title-color: #7a8488;
     --button-color: #fa7422;
 
 }
@@ -88,6 +89,91 @@
     background-repeat: no-repeat;
 
 }
+
+main {
+
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+
+}
+
+.services {
+
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+.services__title {
+
+    text-align: center;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    color: var(--title-color);
+    margin-bottom: 50px;
+
+}
+
+.services__grid {
+
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2 1fr);
+    grid-template-areas: 
+    "img1 img1 img2 img3"
+    "img1 img1 img4 img5";
+    gap: 15px;
+
+}
+
+.img {
+
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.img1 {
+
+    background-image: url(../assets/video.png);
+    grid-area: img1;
+
+}
+
+.img2 {
+
+    background-image: url(../assets/dish1.png);
+    grid-area: img2;
+
+}
+
+.img3 {
+
+    background-image: url(../assets/dish2.png);
+    grid-area: img3;
+
+}
+
+.img4 {
+
+    background-image: url(../assets/dish3.png);
+    grid-area: img4;
+
+}
+
+.img5 {
+
+    background-image: url(../assets/dish4.png);
+    grid-area: img5;
+
+}
+
+
 
 @media (max-width: 900px) {
     
